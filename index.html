@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Counter</h1>
+      <div class="counter">
+        <button onclick="decrease()">-</button>
+        <h1 id="number"></h1>
+        <button onclick="increase()">+</button>
+      </div>
+      <p id="error">Error</p>
+    </div>
+  </body>
+
+  <script>
+    //write code here
+    /* Create a variable */
+    let no = 0;
+
+    /* Function to increment a number */
+    function increase(){
+      /* Increment */
+      no += 1;
+      /* Set the value */
+      document.getElementById("number").innerText = no;
+    }
+    
+    /* Function to decrement a number */
+    function decrease(){
+      /* Decrement */
+      no -= 1;
+      /* Set the value */
+      document.getElementById("number").innerText = no;
+    }
+  </script>
+</html>
