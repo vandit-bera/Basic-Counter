@@ -17,7 +17,7 @@
 <h3 align="center">Basic Counter</h3>
 
   <p align="center">   
-    <a href="hhttps://vb-basic-counter.vercel.app/">View Live Demo</a>
+    <a href="https://vb-basic-counter.vercel.app/">View Live Demo</a>
   </p>
 </div>
 
