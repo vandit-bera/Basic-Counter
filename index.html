@@ -12,7 +12,7 @@
       <h1>Counter</h1>
       <div class="counter">
         <button onclick="decrease()">-</button>
-        <h1 id="number"></h1>
+        <h1 id="number">0</h1>
         <button onclick="increase()">+</button>
       </div>
       <p id="error">Error</p>
@@ -21,23 +21,26 @@
 
   <script>
     //write code here
-    /* Create a variable */
-    let no = 0;
-
-    /* Function to increment a number */
-    function increase(){
-      /* Increment */
-      no += 1;
-      /* Set the value */
-      document.getElementById("number").innerText = no;
-    }
+    let sect = document.getElementsByClassName("counter");
+    const err = document.getElementById("error");
+    let num = 0;
     
-    /* Function to decrement a number */
-    function decrease(){
-      /* Decrement */
-      no -= 1;
-      /* Set the value */
-      document.getElementById("number").innerText = no;
+    function increase() {
+      num += 1;
+      document.getElementById("number").innerText = num;
+    }
+
+    function decrease() {
+      if (num > 0) {
+        num -= 1;
+        document.getElementById("number").innerText = num;
+      } else {
+        error;
+      }
+    }
+
+    function error() {
+      err.appendChild(sect);
     }
   </script>
 </html>
