@@ -21,26 +21,28 @@
 
   <script>
     //write code here
-    let sect = document.getElementsByClassName("counter");
-    const err = document.getElementById("error");
+    /* Create a variable for store number */
     let num = 0;
-    
+
+    /* Increase Function */
     function increase() {
       num += 1;
       document.getElementById("number").innerText = num;
-    }
 
+      /* When number > 0 then remove error message */
+      document.getElementById("error").style.display = "none";
+    }
+    
+    /* Decrease Function */
     function decrease() {
+      /* Check condition for number is positive or negative */
       if (num > 0) {
         num -= 1;
         document.getElementById("number").innerText = num;
       } else {
-        error;
+        /* When number < 0 then add error message */
+        document.getElementById("error").style.display = "block";
       }
-    }
-
-    function error() {
-      err.appendChild(sect);
     }
   </script>
 </html>
