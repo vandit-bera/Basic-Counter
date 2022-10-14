@@ -25,7 +25,7 @@
 
 ## About The Project
 
-![Project 15](./ss/1.png)
+![img](./ss/1.png)
 
 
 
